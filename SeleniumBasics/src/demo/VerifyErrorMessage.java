@@ -15,6 +15,7 @@ public class VerifyErrorMessage {
 		driver.manage().window().maximize(); // Maximizes the window
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://facebook.com");
+		//Today is Monday April 3.
 	}
 
 	public void verifyError() {
