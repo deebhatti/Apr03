@@ -30,7 +30,7 @@ public class Calculator {
 		basicCal.subtract(50, 30);
 
 		basicCal.multiply(60, 2);
-		basicCal.divide(50, 5);
+		
 
 	}
 
