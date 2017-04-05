@@ -2,11 +2,13 @@ package demo;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class VerifyTitle {
 	
-	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+	@Test
+	public void openBrowser(){
+		System.setProperty("webdriver.chrome.driver", "C:\\Webdrivers\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver(); //Opens the browser
 		
 		driver.manage().window().maximize(); //Maximizes the window
@@ -24,7 +26,7 @@ public class VerifyTitle {
 			System.out.println("Test Case Failed");
 		}
 		
-		
+		driver.close();
 		
 	}
 

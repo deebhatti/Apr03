@@ -10,7 +10,7 @@ public class VerifyErrorMessage {
 	WebDriver driver;
 
 	public void openBrowser() {
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Webdrivers\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver(); // Opens the browser
 		driver.manage().window().maximize(); // Maximizes the window
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
